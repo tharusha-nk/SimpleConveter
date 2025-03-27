@@ -4,6 +4,7 @@ const mtocm = document.getElementById("mtocm");
 const cmtom = document.getElementById("cmtom");
 const ctof = document.getElementById("ctof");
 const ftoc = document.getElementById("ftoc");
+const closebtn = document.getElementById("close");
 let answeight = 0;
 let anslength = 0;
 let anstemp = 0;
@@ -55,4 +56,8 @@ ftoc.onclick = function () {
     const anstemp = (temperature - 32) * 5 / 9;
     document.getElementById("anstemp").textContent = anstemp + `°C`;
 
+}
+
+closebtn.onclick = function () {
+    window.close();
 }
